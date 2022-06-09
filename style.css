@@ -297,13 +297,17 @@ h5 {
     font-size: 36px !important;
 }
 
-#developpe_couche_barre, #developpe_incline_barre, #developpe_decline, #ecarte_decline, #ecarte_couche, #chest_press, #developpe_elastique, #ecarte_poulie_vis_a_vis, #ecarte_couche_poulie_vis_a_vis {
+#developpe_couche_barre, #developpe_incline_barre, #developpe_decline, #ecarte_decline, #ecarte_couche, #chest_press, #developpe_elastique, #ecarte_poulie_vis_a_vis, #ecarte_couche_poulie_vis_a_vis, #traction {
     display: none;
     
 }
 
-#developpe_couche_barre:target, #developpe_incline_barre:target, #developpe_decline:target, #ecarte_decline:target, #ecarte_couche:target, #chest_press:target, #developpe_elastique:target, #ecarte_poulie_vis_a_vis:target, #ecarte_couche_poulie_vis_a_vis:target {
+#developpe_couche_barre:target, #developpe_incline_barre:target, #developpe_decline:target, #ecarte_decline:target, #ecarte_couche:target, #chest_press:target, #developpe_elastique:target, #ecarte_poulie_vis_a_vis:target, #ecarte_couche_poulie_vis_a_vis:target, #traction:target {
     display: block;
+}
+
+.icon {
+    display: none;
 }
 
 
@@ -322,7 +326,7 @@ footer a {
 }
 
 
-/* Version mobile debout + grande partie de la tablette debout*/
+/* Version mobile debout + tablette debout*/
 
 
 @media (max-width: 821px) {
@@ -469,6 +473,20 @@ footer a {
     .nom_exo {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+.icon {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+    .fleche {
+        font-size: 40px !important;
+        border: #7373FF 3px solid;
+        border-radius: 100%;
+        color: #7373FF;
     }
 }
 
